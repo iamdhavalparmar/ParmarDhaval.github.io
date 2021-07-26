@@ -13,7 +13,7 @@
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="assets/css/styles.css">
 
-    <title>Hey, There</title>
+    <title>Dhaval Parmar</title>
 </head>
 
 <body>
@@ -24,7 +24,7 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link">
+                        <a href="#home" class="nav__link active-link">
                             <i class="uil uil-estate nav__icon"></i> Home
                         </a>
                     </li>
@@ -57,6 +57,8 @@
                 <i class="uil uil-times nav__close" id="nav-close"></i>
             </div>
             <div class="nav__btns">
+                <!-- Theme change button -->
+                <i class="uil uil-moon change-theme" id="theme-button" ></i>
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="uil uil-apps"></i>
                 </div>
@@ -71,6 +73,9 @@
             <div class="home__container container grid">
                 <div class="home__content grid">
                     <div class="home__social">
+                        <a href="https://stackoverflow.com/users/13023478/iamdhavalparmar"  target="_blank" class="home__social-icon">
+                         <img src="/assets/img/stack-overflow.png"/>
+                        </a>
                         <a href="https://www.linkedin.com/in/iamdhavalparmar/" target="_blank" class="home__social-icon">
                             <i class="uil uil-linkedin-alt"></i>
                         </a>
@@ -400,7 +405,19 @@
                         <img src="assets/img/perfil.png" alt="" class="portfolio__img">
                         <div class="portfolio__data">
                             <h3 class="portfolio__title">Fund Management App</h3>
-                            <p class="portfolio__description">A mobile application which is used by students and faculty to ease their fund process</p>
+                            <p class="portfolio__description">This mobile app was build to make the process of fund management smooth in a campus, The student can request for funds with some their documents to suppport the claim, The guide/faculty will then verify the details and send that to HOD, The HOD on the other hand also verify some documents and then process it further. Earlier it was very difficult for students to manually go to the each person and verify their docs!</p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                Source
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>               
+                        </div>
+                    </div>
+                     <!--==================== PORTFOLIO 2====================-->
+                     <div class="portfolio__content grid swiper-slide">
+                        <img src="assets/img/perfil.png" alt="" class="portfolio__img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Waste Management App</h3>
+                            <p class="portfolio__description">This mobile app is very useful for a campus, This app provides smart way to managing garbage in the campus, When any user finds that a garbage bin is filled with garbage and not clened on time he/she can make a request to clean it. Then the cleaning staff will recieve the notification with the location of the bin and they can collect the garbage from there!</p>
                             <a href="#" class="button button--flex button--small portfolio__button">
                                 Source
                                 <i class="uil uil-arrow-right button__icon"></i>
@@ -434,19 +451,75 @@
 
         <!--==================== CONTACT ME ====================-->
         <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">Get in touch</span>
+
+            <div class="contact__container container grid">
+                <div>
+                    <div class="contact__information">
+                        <i class="uil uil-phone contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Call Me</h3>
+                            <span class="contact__subtitle">6351858820</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="uil uil-envelope contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Email</h3>
+                            <span class="contact__subtitle ">iamdhavalparmar27@gmail.com</span>
+                        </div>
+                    </div>
 
 
+                </div>
+            </div>
         </section>
     </main>
 
     <!--==================== FOOTER ====================-->
     <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Dhaval</h1>
+                    <span class="footer__subtitle">Software Developer</span>
+                </div>
 
+                <ul class="footer__links">
+                    <li>
+                        <a href="#services" class="footer__link">Services</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="footer__link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">Contactme</a>
+                    </li>
+                </ul>
+
+                <div class="footer__socials">
+                    <a href="https://www.instagram.com/iamdhavalparmar" target="__blank" class="footer__social">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+
+                    <a href="https://twitter.com/iamdhavalparmar" target="__blank" class="footer__social">
+                        <i class="uil uil-twitter-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
 
     </footer>
 
     <!--==================== SCROLL TOP ====================-->
 
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
 
     <!--==================== SWIPER JS ====================-->
     <script src="assets/js/swiper-bundle.min.js"></script>
